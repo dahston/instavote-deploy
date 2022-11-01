@@ -3,8 +3,6 @@ kind: Kustomization
 resources:
 - db-helmrelease.yaml
 - db-helmrepository.yaml
-- github-instavote-secret.yaml
-- github-token-secret.yaml
 - instavote-gitrepository.yaml
 - instavote-provider.yaml
 - instavote-receiver.yaml
@@ -19,6 +17,5 @@ resources:
 - vote-imageudateautomation.yaml
 - vote-staging-alert.yaml
 - vote-staging-kustomziation.yaml
-- webhook-token-secret.yaml
 - worker-kustomization.yaml
 - worker-staging-alert.yaml
