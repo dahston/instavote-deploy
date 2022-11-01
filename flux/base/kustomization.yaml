@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
 - db-helmrelease.yaml
 - db-helmrepository.yaml
-- dockerhub-creds-secret.yaml
 - github-instavote-secret.yaml
 - github-token-secret.yaml
 - instavote-gitrepository.yaml
