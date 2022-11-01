@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- db-helmrelease.yaml
+- db-helmrepository.yaml
+- dockerhub-creds-secret.yaml
+- github-instavote-secret.yaml
+- github-token-secret.yaml
+- instavote-gitrepository.yaml
+- instavote-provider.yaml
+- instavote-receiver.yaml
+- redis-kustomization.yaml
+- redis-staging-alert.yaml
+- result-helmrelease.yaml
+- result-imagepolicy.yaml
+- result-imagerepository.yaml
+- result-imageudateautomation.yaml
+- vote-imagepolicy.yaml
+- vote-imagerepository.yaml
+- vote-imageudateautomation.yaml
+- vote-staging-alert.yaml
+- vote-staging-kustomziation.yaml
+- webhook-token-secret.yaml
+- worker-kustomization.yaml
+- worker-staging-alert.yaml
