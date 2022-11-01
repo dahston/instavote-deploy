@@ -1,0 +1,18 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  labels:
+    kustomize.toolkit.fluxcd.io/name: flux-system
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
+  name: instavote-deploy
+  namespace: flux-system
+spec:
+  gitImplementation: go-git
+  interval: 1h
+  ref:
+    branch: main
+  timeout: 20s
+  url: https://github.com/dahston/instavote-deploy.git
+  secretRef:
+    name: github-instavote
