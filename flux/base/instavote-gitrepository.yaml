@@ -11,7 +11,7 @@ spec:
   gitImplementation: go-git
   interval: 1h
   ref:
-    branch: main
+    branch: master
   timeout: 20s
   url: https://github.com/dahston/instavote-deploy.git
   secretRef:
